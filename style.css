@@ -1,0 +1,504 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+padding:0;
+margin:0;
+box-sizing: border-box;
+}
+
+html{
+font-size: 10px;
+font-family:  "Roboto-Condensed", sans-serif;
+
+}
+
+
+.container{
+min-height: 100vh;
+width: 100%;
+display: flex;
+align-items:center;
+justify-content: center;
+
+}
+ 
+
+------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+/* Welcome styling*/
+#welcome{
+background-image: url('images/Founder.jpg');
+background-position: center ;
+position: relative;
+background-size: cover;
+min-height: fit-content;
+z-index: 1;
+background-repeat: no-repeat;
+}
+
+#welcome::after{
+content: '';
+position:absolute;
+left:0;
+top:0;
+height: 100%;
+width: 100%;
+background-color: black;
+opacity: .8;
+z-index: -1;
+
+}
+ 
+#welcome pre{
+display: block;
+font-size: 45px;
+position: relative;
+width: fit-content;
+background-color:rgba(255, 192, 203, 0.395);
+color:whitesmoke;
+border-radius: 19%;
+font-family: Georgia, 'Times New Roman', Times, serif; 
+}
+
+#welcome b{
+height:6px;
+width:150px;
+
+color:rgb(245, 245, 245);
+opacity: 5%;
+transform:scale(0);
+animation:popUp 9s cubic-bezier(0.34, 1.54, 0.37, 1) forwards;
+font-family: cursive;
+font-size:57px;
+
+}
+
+@keyframes popUp{
+
+0%{ 
+    opacity: 0;
+    transform:scale(0);
+}
+100%{ 
+    opacity: 1;
+    transform:scale(1);
+}
+
+}
+
+/* End of Welcome styling*/
+
+
+------------------------------------------------------------------------------------------------------------------------------------------------
+
+/* Main styling*/
+.a1 {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  padding: 15px 0;
+  background-color: rgba(0, 0, 0, 0.5);  /* subtle dark bar so it stands out */
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+.a1 a {
+text-decoration: none;
+color:rgb(196, 9, 177);
+position: relative;
+top: 2pc;
+left: 50%;
+margin: 2px;
+padding: 2%;
+font-size:24px;
+border-radius: 6pc;
+font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.a1 a:hover{
+background-color: rgb(176, 166, 171);
+cursor: pointer;
+
+
+}
+/* End of Main styling*/
+
+------------------------------------------------------------------------------------------------------------------------------------------------
+
+/* ABOUT ME PAGE STYLING!!*/
+#about{background-image: url(images/GradCover.jpg);
+background-position: center;
+position: absolute;
+background-size: cover;
+z-index: 1;
+font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+#about::after{
+content: '';
+position:absolute;
+left:0;
+top:0;
+height: 100%;
+width: 100%;
+background-color: black;
+opacity: .8;
+z-index: -1;
+}
+
+.mecontainer{
+min-height: 100vh;
+width: 100%;
+display: flex;
+align-items:center;
+justify-content:center;
+padding-top: 60px;
+}
+
+.atitle {
+color: rgb(228, 8, 225);
+text-align: center;
+margin-bottom: 0%;
+display: flexbox;
+margin-top: 0px;
+padding-top: 6%;
+padding-bottom: 0%;
+height: auto;
+font-size: 70px;
+}
+
+
+.mecontainer pre{
+color:whitesmoke;
+font-size: 20px;
+font-family:"Roboto-Condensed", sans-serif ;
+padding: 20px 5%;
+text-align: justify;
+margin-top: 0px;
+align-items: center;
+
+}
+
+.scroll-container{
+scrollbar-width: auto;
+overflow:auto;
+white-space: nowrap;
+padding: 4px;
+
+
+}
+
+.scroll-container img{
+
+        padding: 4px;
+
+
+}
+
+
+.snip {
+color: rgb(228, 8, 225);
+text-align: center ;
+bottom: 15px;
+display: flexbox;
+margin-top: 0px;
+padding-bottom: 5% ;
+height: 25%;
+font-size: 35px;
+}
+
+.about-a1-deco a {
+text-decoration: none;
+color:rgb(196, 9, 177);
+position: relative;
+top: 2pc;
+left: 50%;
+margin: 2px;
+padding: 2%;
+font-size:24px;
+border-radius: 6pc;
+font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.about-a1-deco a:hover{
+background-color: rgb(176, 166, 171);
+cursor: pointer;
+
+
+}
+
+
+
+/* end of ABOUT ME PAGE STYLING!!*/
+
+------------------------------------------------------------------------------------------------------------------------------------------------
+
+/* Projects PAGE STYLING!!*/
+
+#projects{
+background-image: url("images/projects.jpeg");
+background-position: center ;
+position: relative;
+background-size: cover;
+min-height:100vh;
+z-index: 1;
+background-repeat: no-repeat;
+}
+
+
+#projects::after{
+content: '';
+position:absolute;
+left:0;
+top:0;
+height:100%;
+width: 100%;
+background-color: rgb(16, 15, 15);
+opacity: .8;
+z-index: -1;
+}
+
+.ptitle {
+color: rgb(228, 8, 225);
+text-align: center;
+bottom: 15px;
+display: flexbox;
+margin-top: 5%;
+padding-top: 40px;
+padding-bottom: 0% ;
+height: 50%;
+font-size: 70px;
+font-family: Georgia, 'Times New Roman', Times, serif;
+top: 20px;  
+}
+
+.cn{
+
+margin:15px;
+background-color: rgba(77, 3, 68, 0.797);
+border: 2px solid black;
+opacity: 3;
+font-size: 25px;
+padding: 15px;
+color: palevioletred;
+}
+
+.pcontainer {
+text-decoration: none;
+color:rgba(160, 17, 127, 0.532);
+position: relative;
+top: 2pc;
+left: 50%;
+margin: 2px;
+padding: 2%;
+font-size:50px;
+border-radius: 10pc;
+}
+
+.pcontainer a:hover{
+cursor: pointer;
+}
+
+
+.project-link-name {
+
+font-family: Georgia, 'Times New Roman', Times, serif;
+border-radius: 10pc;
+font-size: 28px;
+text-decoration: none;
+text-align:center;
+color: palevioletred;
+}
+
+.github-icon-name{
+ 
+font-size:20px;
+text-decoration: none;
+color:plum;
+font-weight: bolder;
+}
+
+
+.no-line {
+text-decoration: none;
+}
+
+
+i{
+font-size: 60px;
+float: inline-start;
+font:bold;
+
+}
+ .top-right-icon{
+    background-color: transparent;
+    text-decoration: none;
+    color: white;
+    font-size:20px;
+    position: absolute;
+    top: 20px;
+    left: 19px;
+    z-index: 50;
+ }
+ 
+ /* end of  Projects PAGE STYLING!!*/
+
+
+------------------------------------------------------------------------------------------------------------------------------------------------
+  
+/* Volunteering PAGE STYLING!!*/
+#volunteering{
+background-image: url(images/GKLeadership.jpg);
+background-position: center ;
+position: relative;
+background-size: cover;
+min-height:100vh;
+z-index: 1;
+background-repeat: no-repeat;
+}
+
+#volunteering::after{
+content: '';
+position:absolute;
+left:0;
+top:0;
+height:100%;
+width: 100%;
+background-color: rgb(16, 15, 15);
+opacity: .8;
+z-index: -1;
+}
+
+.vtitle {
+color: rgb(228, 8, 225);
+text-align: center;
+margin-bottom: 0%;
+display: flexbox;
+margin-top: 0px;
+padding-top: 6%;
+padding-bottom: 0%;
+height: auto;
+font-size: 50px;
+font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.vol-images-class{
+ display: flex;
+align-items: center;
+  gap: 25px;
+  padding: 40px 5%;
+}
+
+
+.volimg{
+margin-top:20px;
+width: 250px;
+flex: 1;
+max-width: 40%;
+border-radius: 8px;
+}
+
+.vol-images-class-text{
+
+color:aliceblue;
+font-size: 30px;
+font-family: Georgia, 'Times New Roman', Times, serif;
+padding: 5px 5%;
+text-align: left;
+margin-top: 0px;
+align-items: center;
+text-wrap: 20px;
+margin-right:0px;
+
+}
+
+.heading{
+font:bolder;
+font-family: Georgia, 'Times New Roman', Times, serif;
+border-radius: 10pc;
+font-size: 28px;
+text-decoration: none;
+text-align:center;
+color:rgb(223, 215, 224);
+right: 10px;
+margin-left: 60px;
+margin-top: 100px;
+}
+
+
+  /* end of  Volunteering PAGE STYLING!!*/
+
+------------------------------------------------------------------------------------------------------------------------------------------------
+/* Contact PAGE STYLING!!*/
+
+#contact{
+background-image: url(images/contact.jpg);
+background-position: center ;
+position: relative;
+background-size: cover;
+min-height:100vh;
+z-index: 1;
+background-repeat: no-repeat;
+}
+
+#contact::after{
+content: '';
+position:absolute;
+left:0;
+top:0;
+height:100%;
+width: 100%;
+background-color: rgb(16, 15, 15);
+opacity: .8;
+z-index: -1;
+}
+
+
+.contact-header{
+
+color: rgb(228, 8, 225);
+text-align: center;
+margin-bottom: 0%;
+display: flexbox;
+margin-top: 0px;
+padding-top: 6%;
+padding-bottom: 0%;
+height: auto;
+font-size: 50px;
+font-family: Georgia, 'Times New Roman', Times, serif;
+
+}
+
+
+
+
+.contact-image{
+
+margin-top: 78px;
+width: 420px;
+border-radius: 1000px;
+
+
+}
+.contact-picture-text{
+
+font-family: Georgia, 'Times New Roman', Times, serif;
+font-size: 20px;
+position: absolute;
+text-decoration: none;
+font-style: italic;
+border-radius: 25px;
+top: 55px;
+right: 500px;
+margin-top: 78px;
+
+}
+
+
+.contact-picture-text:nth-of-type(1) { top: 10px; }
+.contact-picture-text:nth-of-type(2) { top: 90px; }
+.contact-picture-text:nth-of-type(3) { top: 170px; }
+.contact-picture-text:nth-of-type(4) { top: 250px; }
+
+    /* end of Contact PAGE STYLING!!*/
