@@ -49,9 +49,6 @@ To view this project locally:
 - **GitHub:** [github.com/Oboikanyo03](https://github.com/Oboikanyo03)
 - **LinkedIn:** [Add your LinkedIn URL here]
 
-## 📄 License
-
-This project is open for personal reference. Please contact me if you'd like to reuse any part of the design or code.
 
 ---
 
