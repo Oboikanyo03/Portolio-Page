@@ -2,7 +2,7 @@
 
 A personal portfolio website showcasing my background, projects, volunteering experience, and contact information.
 
-🔗 Live Site:http://127.0.0.1:5500/Index.html
+
 
 ## 📖 About
 
